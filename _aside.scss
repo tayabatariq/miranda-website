@@ -1,0 +1,59 @@
+%flexCenter {
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
+
+aside {
+  min-height: 40vh;
+  width: 100%;
+  padding-top: 2vw;
+  background-color: $main-color;
+
+  .moving {
+    height: 30vh;
+    width: 96%;
+    border-top: 1px solid $dark-fonts;
+    border-bottom: 1px solid $dark-fonts;
+    margin-left: 2%;
+    @extend %flexCenter;
+    gap: 4rem;
+
+    .move {
+      @extend %flexCenter;
+      gap: .6rem;
+
+      .move-text {
+        p {
+          width: 100%;
+          font-size: 1.7vw;
+          font-family: editorial;
+          color: $dark-fonts;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        h6 {
+          font-family: canope;
+          width: 100%;
+          text-transform: uppercase;
+
+          font-weight: 500;
+          font-size: 4.5vw;
+        }
+      }
+
+      .move-num {
+        height: 100%;
+
+        p {
+          font-size: 8vw;
+          font-family: editorial;
+          font-weight: 500;
+        }
+      }
+    }
+
+  }
+}

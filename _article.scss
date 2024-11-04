@@ -1,0 +1,213 @@
+article {
+    min-height: 100vh;
+    width: 100%;
+    background-color: $main-color;
+
+    .article-head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10rem 1rem;
+        height: 40vh;
+
+        .head-h {
+            font-size: 27vw;
+            font-family: canope;
+            background-color: $dark-fonts;
+            color: $main-color;
+            font-weight: 100;
+            width: 84%;
+            height: 50vh;
+            line-height: 29vw;
+            letter-spacing: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .articleimg {
+            width: 30%;
+            height: 55vh;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .article-btm {
+        padding: 1rem;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+
+
+        .article-left {
+            width: 62vw;
+            height: 100%;
+            padding: 1rem;
+            padding-right: 2rem;
+
+            .article-left-top{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                margin-bottom: 5vh;
+                .left-top{
+                    width: 90%;
+                    height: 100%;
+                    border-right: 1px solid $dark-fonts;
+                   
+                    h3{
+                        font-size: 4.1vw;
+                        font-weight: 400;
+                        letter-spacing: -3px;
+                        font-family: domaine;
+                        text-transform: uppercase;
+                    filter: blur(.3px);
+
+                    }
+                    p{
+                        text-align: left;
+                        font-size: 2.6vw;
+                        font-weight: 200;
+                    filter: blur(.3px);
+
+                        font-family: editorial;
+                        
+
+                    }h6{
+                        font-size: 1vw;
+                        font-weight: 200;
+                        margin-top: 2vh;
+                        font-family: editorial;
+                        
+
+                    filter: blur(.3px);
+                    span{
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                    }
+                    
+                }
+                .elem1{
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 2vw;
+                    margin-left: 1vw;
+                    .img-div{
+                        width: 100%;
+                        height: 120%;
+                        overflow: hidden;
+                        img{
+                            height: 140%;
+                            width: 100%;
+                        border: 1px solid $dark-fonts;
+                        object-fit: cover;
+                        transition: all .5s ease-in;
+                        }
+            
+            
+                    }
+                    .elem-text{
+                        width: 100%;
+                        padding-top: 1vw;
+                        height: 100%;
+                        h5{
+                            font-size: 1.7vw;
+                            font-family: domaine;
+                            font-weight: 700;
+                            letter-spacing: -1px;
+                            text-transform: uppercase;
+                        }p{
+                            color: $light-fonts;
+                            font-size: 1.3vw;
+                            filter: blur(.1px) !important;
+                            margin-top: 1vw;
+                            font-family: editorial;
+                            font-weight: 550;
+
+                        }
+                    }
+                    
+                    
+                    
+                }
+                
+
+
+            }.article-left-btm{
+                width: 100%;
+                border: 1px solid $dark-fonts;
+                height: 50%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .article-right {
+            width: 30vw;
+            border-left: 1px solid $dark-fonts;
+            height: 100%;
+            padding: 2rem 1rem;
+            h2{
+                width: 120%;
+                font-size: 6.5vw;
+                text-transform: uppercase;
+                letter-spacing: -6px;
+                text-align: center;
+                font-family: domaine;
+                font-weight: 200;
+               
+            } .span{
+                font-weight:600;
+                font-family: canope;
+                font-size: 12vw;
+                letter-spacing: 4px;
+            }p{
+                width: 115%;
+                // text-align: left;
+                color: $dark-fonts;
+                margin-left: 1vw;
+                font-size: 2vw;
+                font-family: editorial;
+            }.span2{
+                margin-top: 4vw;
+            }
+            .work{
+                width: 19vw;
+
+                border-radius: 90px;
+                padding: 2rem 14rem;
+                border: 1px solid rgba(29, 29, 27, .5);
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3vh;
+                display: flex;
+                position: relative;
+                border: 1px solid $dark-fonts;
+                p{
+                    font-size: 7vw;
+                    margin-left: -16rem;
+                    color: $dark-fonts;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-family: editorial;
+                }
+            }
+
+
+
+        }
+    }
+}
+

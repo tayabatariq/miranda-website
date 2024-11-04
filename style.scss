@@ -1,0 +1,253 @@
+@import "color";
+@import "fonts";
+@import "section";
+@import "article";
+@import "aside";
+@import "footer";
+@import "openav";
+@import "hover";
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+
+
+
+}
+#main{
+    background-color: $dark-fonts;
+    overflow: hidden;
+    position: relative;
+
+}
+%flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flexSpace{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main-color;
+    nav{
+        width: 100%;
+        padding: 1.4vw 2vw ;
+        @extend %flexSpace;
+        border-bottom: 1px solid $light-fonts;
+     img{
+        width: 9.4%;
+     }
+     h5{
+        font-size: .7rem;
+        font-weight: 500;
+        color: $light-fonts;
+        font-family: editorial;
+     }
+     i{
+        font-size: 1.4rem;
+        position: relative;
+     }
+
+    }
+    .head-h{
+        font-size:33vw;
+        font-family: canope;
+        background-color: $dark-fonts;
+        color: $main-color;
+        font-weight: 100;
+        width: 94%;
+        line-height: 29vw;
+        letter-spacing: -10px;
+        margin-left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+     
+.img-div:hover img{
+    scale: 1.09;
+}
+.elems{
+    width: 100%;
+    height: 54vh;
+    @extend %flexSpace;
+    padding: 2rem 3rem;
+
+    .elem1{
+        height: 100%;
+        width: 30%;
+        .img-div{
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            border: 1px solid $dark-fonts;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            transition: all .5s ease-in;
+
+            }
+
+
+        }
+        .elem-text{
+            width: 100%;
+            height: 50%;
+            margin-top: 2rem;
+            
+           .elem-top{
+            width: 100%;
+            height: 30%;
+                display: flex;
+                img{
+                    height: 60%;
+                }
+                p{
+                    background-color:$span-color;
+                    color: #cecccc;
+                    
+                    font-family: canope;
+                    font-size: 1rem;
+                    height: 50%;
+                    padding:.1rem .2rem;
+                    margin-left: .7vw;
+                    border-radius: 2px;
+                    filter: blur(.5px);
+
+                }
+                
+
+            }
+            >p{
+                width: 100%;
+                color: $dark-fonts;
+                font-family: editorial;
+                filter: blur(.3px);
+            }
+        }
+        
+    }
+    
+    .elem2{
+        height: 100%;
+        width: 30%;
+        padding: 0 2rem;
+        text-align: center;
+        border-left: 1px solid $light-fonts;
+        border-right: 1px solid $light-fonts;
+
+        h2{
+            letter-spacing: -.05em;
+            text-transform: uppercase;
+            font-family: canope, sans-serif;
+            font-size: 4.5vw;
+            font-weight: 400;
+            line-height: 4.5vw;
+        }
+        .para{
+            font-size: 2.3rem;
+            font-family: editorial;
+            color: $dark-fonts;
+            filter: blur(.3px);
+            line-height: 2.4rem;
+            margin-top: 2vw;
+            letter-spacing: -.05em;
+
+        }
+        p{
+            font-size: 1rem;
+            font-family: editorial;
+            color: $dark-fonts;
+            filter: blur(.3px);
+            line-height: 2.4rem;
+            margin-top: 2vw;
+            letter-spacing: -.05em;
+            span{
+                font-weight: 600;
+                font-family: canope;
+            }
+        }
+        
+    }
+    .elem3{
+        height: 100%;
+        width: 30%;
+        .img-div{
+            width: 100%;
+            height: 50%;
+        border: 1px solid $dark-fonts;
+
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            transition: all .5s ease-in;
+
+            }
+            
+
+
+        }
+        .elem-text{
+            width: 100%;
+            height: 50%;
+            margin-top: 2rem;
+           .elem-top{
+            width: 100%;
+            height: 30%;
+                display: flex;
+                img{
+                    height: 60%;
+                }
+                p{
+                    background-color:$span-color;
+                    color: #cecccc;
+
+                    font-family: canope;
+                    font-size: 1rem;
+                    height: 50%;
+                    padding:.1rem .2rem;
+                    margin-left: .7vw;
+                    border-radius: 2px;
+                    filter: blur(.5px);
+
+                }
+                
+
+            }
+            >p{
+                width: 100%;
+                color: $dark-fonts;
+                font-family: editorial;
+                filter: blur(.3px);
+            }
+        }
+        
+    }
+    
+}

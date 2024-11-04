@@ -1,0 +1,59 @@
+footer {
+    .ft-btm{
+
+    .btm-link{
+        a::before{
+            content: '';
+            background-color: $span-color;
+            height: 2%;
+            width: 0;
+            transition: all 0.3s ease-in-out;
+
+            position: absolute;
+            bottom: 0;
+            left:0,
+            
+        }
+        a:hover::before{
+            width: 100%;
+
+        }
+
+    }
+}
+}
+
+#openav{
+    .head {
+        h3:before{
+            content: '';
+            width: 0;
+            height: 4%;
+            transition: all 0.3s ease-in-out;
+
+            position: absolute;
+            bottom: 50%;
+            background-color: $span-color;
+        }
+        h3:hover::before{
+            width: 100%;
+        }
+    }
+}
+#openav{
+    .nav-link {
+    a:before{
+            content: '';
+            width: 0;
+            height: 2%;
+            transition: all 0.3s ease-in-out;
+
+            position: absolute;
+            bottom: 0%;
+            background-color: $light-fonts;
+        }
+        a:hover::before{
+            width: 100%;
+        }
+    }
+}

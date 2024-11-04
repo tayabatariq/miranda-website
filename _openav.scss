@@ -1,0 +1,59 @@
+
+#openav{
+    height: 100vh;
+    width: 100%;
+    background-color: $dark-fonts
+    ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:relative ;
+
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    flex-direction: column;
+
+    i{
+        position:absolute;
+        right: 5%;
+        top: 6%;
+        font-size: 3rem;
+        color: $main-color;
+    }
+   img{
+    height: 2vw;
+    margin-top: 1rem;
+
+   }
+   .head{
+    height: 60vh;
+    h3{
+        font-family: editorial;
+        text-transform: uppercase;
+        color: $main-color;
+        font-weight: 400;
+        text-align: center;
+        font-size: 11vw;
+        position: relative;
+        line-height: 10vw;
+        letter-spacing: -2px;
+        font-family: Canopee, sans-serif;
+    }
+   }
+   .nav-link {
+    a{
+        text-decoration: none;
+        font-size: .7rem;
+        filter: blur(.3px);
+        color: $main-color;
+        text-transform: uppercase;
+        font-weight: 500;
+    margin-left: 1.8vw;
+position: relative;
+        letter-spacing: -1px;
+
+    }
+   }
+}
